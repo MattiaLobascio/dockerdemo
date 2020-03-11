@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>NLTK summarizer prototype</title>
+    </head>
+    <body bgcolor="#dddddd" style='font-family="sans-serif"'>
+        <table width="80%" height="80%" align="center" border="0">
+            <tr>
+              <td bgcolor="#000000" width="50%" valign="top">
+                <div style="padding: 20px;">
+                  <font color="#ffffff">
+                    <h1>NLTK summarizer prototype</h1>
+                    <h2>Input text:</h2>
+                  </color>
+                  <form method="POST">
+                      <textarea name="text" rows="20" cols="80"></textarea><br><br>
+                      <input type="submit">
+                  </form>
+                </div>
+              </td>
+              <td bgcolor="#ffffff" cellpadding="20" valign="top">
+                <div style="padding: 20px;">
+                  {% if final %}
+                  <h1>Summary</h1>
+                  <p>{{ final }}</p>
+                  {% else %}
+                  <p></p>
+                  {% endif %}
+                </div>
+              </td>
+            </tr>
+        </table>
+    </body>
+</html>
